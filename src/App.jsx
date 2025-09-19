@@ -1,3 +1,6 @@
+import Contact from './components/Contact/Contact';
+import VisitorCounter from './components/VisitorCounter/VisitorCounter';
+
 import React from 'react';
 
 export default function App() {
