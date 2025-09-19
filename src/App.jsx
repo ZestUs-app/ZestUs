@@ -6,7 +6,7 @@ export default function App() {
   return (
     <div style={{ textAlign: 'center', padding: '2rem' }}>
       <h1>Welcome to ZestUs</h1>
-      <p>This is a working React + Vite app deployed on Netlify.</p>
+      <p>This is a working React + Vite app deployed via GitHub Pages.</p>
 
       {/* Visitor Counter */}
       <VisitorCounter />
