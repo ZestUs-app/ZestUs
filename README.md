@@ -53,6 +53,8 @@ It’s where young people explore passions, express themselves, and connect with
 ### 👥 Visitor Counter & Analytics
 - Track engagement, reach, and growth
 
+### Contact
+- Whether you're a teen, student, mentor, company, changemaker, investor send e-mail to zeljka.potoku@gmail.com
 ---
 
 ## 💬 “How Are You?” Support Hub
