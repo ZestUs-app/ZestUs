@@ -51,7 +51,7 @@ It’s where young people explore passions, express themselves, and connect with
 - Track engagement, reach, and growth
 
 ### ✉️ Contact
-Whether you're a teen, student, mentor, company, changemaker, or investor — send an e-mail to  
+Whether you're a teen, student, mentor, company, changemaker or investor — send an e-mail to  
 zeljka.potoku@gmail.com
 
 
