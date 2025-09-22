@@ -1,12 +1,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import path from 'path';
 
 export default defineConfig({
+  base: '/ZestUs/', // 👈 This must match your GitHub repo name exactly
   plugins: [react()],
-  build: {
-    rollupOptions: {
-      input: path.resolve(__dirname, 'public/index.html'),
-    },
-  },
 });
