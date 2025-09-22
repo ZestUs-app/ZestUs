@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <div style={{ maxWidth: '400px', margin: '2rem auto', textAlign: 'left' }}>
       <h2>Send a Message to ZestUs</h2>
-      <form action="mailto:zeljka.potoku@gmaildiv style={{ marginBottom: '1rem' }}>
+      <form action="mailto:zeljka.potoku@gmail.com div style={{ marginBottom: '1rem' }}>
           <label>Name:</label><br />
           <input type="text" name="name" required style={{ width: '100%' }} />
         </div>
