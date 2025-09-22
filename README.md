@@ -50,16 +50,10 @@ It’s where young people explore passions, express themselves, and connect with
 ### 👥 Visitor Counter & Analytics
 - Track engagement, reach, and growth
 
-<h3>
-  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" style="vertical-align:middle;margin-right:6px;" viewBox="0 0 16 16">
-    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.708 2.825L15 11.383V5.383zm-.034 6.434-4.708-2.825-1.258.755a.5.5 0 0 1-.5 0l-1.258-.755-4.708 2.825A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.183zM1 11.383l4.708-2.825L1 5.383v6z"/>
-  </svg>
-  Contact
-</h3>
-<p>
-  Whether you're a teen, student, mentor, company, changemaker, or investor, send an e-mail to 
-  <a href="mailto:zeljka.potoku@gmail.comtoku@gmail.com</a>
-</p>
+### ✉️ Contact
+Whether you're a teen, student, mentor, company, changemaker, or investor — send an e-mail to  
+**[zeljka.potoku@gmail.com](mailto:zeljka.potoku@gmail
+
 
 ---
 
