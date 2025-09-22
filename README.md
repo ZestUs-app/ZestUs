@@ -21,7 +21,6 @@ It’s where young people explore passions, express themselves, and connect with
 ### 🔍 Discover Professions
 - Clickable cards with skills, job outlook, and real-world insights
 - Explore paths in tech, arts, science, sustainability, and more
-
 ### 🛠️ Projects & Rewards
 - Join or start youth-led projects
 - Earn badges, internships, and mentorships
@@ -33,7 +32,6 @@ It’s where young people explore passions, express themselves, and connect with
 ### 🧠 Tesla Tutor Zone
 - AI avatars (Tesla, Owl, Marie Curie) teaching micro-lessons
 - Fun, interactive learning in science, tech, and creativity
-
 ### 🎮 Fun Button
 - Mini-games, challenges, and creative prompts
 - Boost engagement and joy
@@ -41,7 +39,6 @@ It’s where young people explore passions, express themselves, and connect with
 ### 🌍 Global Challenges
 - **Save Blue Dot** – environmental missions
 - **Be Better Human** – social impact campaigns
-
 ### 🏢 Cool Companies
 - Employer branding and youth engagement
 - Companies showcase culture, values, and opportunities
@@ -61,7 +58,7 @@ It’s where young people explore passions, express themselves, and connect with
 </h3>
 <p>
   Whether you're a teen, student, mentor, company, changemaker, or investor, send an e-mail to 
-  <a href="mailto:zeljka.potoku@gmaila.potoku@gmail.com</a>
+  <a href="mailto:zeljka.potoku@gmail.comtoku@gmail.com</a>
 </p>
 
 ---
@@ -99,3 +96,4 @@ To create a world where youth are empowered, companies are purpose-driven, and i
 
 Whether you're a student, mentor, company, or changemaker — ZestUs is for you.  
 Let’s grow together. Let’s create together. Let’s change the world together.
+
