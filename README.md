@@ -52,7 +52,7 @@ It’s where young people explore passions, express themselves, and connect with
 
 ### ✉️ Contact
 Whether you're a teen, student, mentor, company, changemaker, or investor — send an e-mail to  
-**[zeljka.potoku@gmail.com]
+zeljka.potoku@gmail.com
 
 
 ---
