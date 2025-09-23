@@ -1,20 +1,31 @@
-import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import HomeFeed from './components/HomeFeed';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import ZestProfile from './components/ZestProfile/ZestProfile';
-// Import other components as needed
+import CreateProfile from './components/ZestProfile/CreateProfile';
+
+function Home() {
+  return (
+    <div style={{ textAlign: 'center', marginTop: 60 }}>
+      <h1>Welcome to ZestUs!</h1>
+      <p>Connect, create, and share your profile.</p>
+    </div>
+  );
+}
 
 function App() {
   return (
     <Router>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/zestprofile">ZestProfile</Link>
-        {/* Add more links as needed */}
+      <nav style={{
+        display: 'flex', gap: 24, padding: 18, background: '#7fd7c4', justifyContent: 'center'
+      }}>
+        <Link to="/" style={{ color: '#fff', fontWeight: 600, textDecoration: 'none' }}>Home</Link>
+        <Link to="/profile" style={{ color: '#fff', fontWeight: 600, textDecoration: 'none' }}>Profile</Link>
+        <Link to="/create-profile" style={{ color: '#fff', fontWeight: 600, textDecoration: 'none' }}>Create Profile</Link>
       </nav>
       <Routes>
-        <Route path="/" element={<HomeFeed />} />
-        <Route path="/zestprofile" element={<ZestProfile />} />
-        {/* Add more routes as needed */}
+        <Route path="/" element={<Home />} />
+        <Route path="/profile" element={<ZestProfile />} />
+        <Route path="/create-profile" element={<CreateProfile />} />
       </Routes>
     </Router>
   );
