@@ -5,36 +5,98 @@
     <title>ZestProfile | ZestUs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-        body { font-family: 'Segoe UI', sans-serif; background: #f4f4f9; margin: 0; }
-        .profile-container { max-width: 500px; margin: 2em auto; background: #fff; border-radius: 12px; box-shadow: 0 2px 12px #0001; padding: 2em; }
-        .profile-pic { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 3px solid #4CAF50; margin-bottom: 1em; }
-        .profile-header { text-align: center; }
-        .user-type { background: #4CAF50; color: #fff; padding: 0.2em 0.8em; border-radius: 20px; font-size: 0.9em; margin-left: 0.5em; }
-        .edit-btn { float: right; background: #eee; border: none; border-radius: 5px; padding: 0.3em 0.8em; cursor: pointer; }
-        .section { margin: 1.5em 0; }
-        .section-title { color: #4CAF50; font-weight: bold; margin-bottom: 0.5em; }
-        .tags { margin: 0.5em 0; }
-        .tag { display: inline-block; background: #e0f7e9; color: #333; border-radius: 12px; padding: 0.2em 0.8em; margin: 0.2em; font-size: 0.9em; }
-        .bio { color: #555; }
-        .profile-links a { color: #4CAF50; text-decoration: none; margin-right: 1em; }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f4f4f9;
+            margin: 0;
+        }
+        .profile-container {
+            max-width: 500px;
+            margin: 2em auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px #0001;
+            padding: 2em;
+        }
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #4CAF50;
+            margin-bottom: 1em;
+        }
+        .profile-header {
+            text-align: center;
+        }
+        .user-type {
+            background: #4CAF50;
+            color: #fff;
+            padding: 0.2em 0.8em;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin-left: 0.5em;
+        }
+        .edit-btn {
+            background: #eee;
+            border: none;
+            border-radius: 5px;
+            padding: 0.3em 0.8em;
+            cursor: pointer;
+            margin-top: 1em;
+        }
+        .section {
+            margin-bottom: 1.5em;
+        }
+        .section-title {
+            color: #4CAF50;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+        }
+        .tags {
+            margin: 0.5em 0;
+        }
+        .tag {
+            display: inline-block;
+            background: #e0f7e9;
+            color: #333;
+            border-radius: 12px;
+            padding: 0.2em 0.6em;
+            margin: 0.2em;
+            font-size: 0.9em;
+        }
+        .bio {
+            color: #555;
+        }
+        .profile-links a {
+            color: #4CAF50;
+            text-decoration: none;
+            margin-right: 1em;
+        }
         @media (max-width: 600px) {
-            .profile-container { padding: 1em; }
-            .profile-pic { width: 70px; height: 70px; }
+            .profile-container {
+                padding: 1em;
+            }
+            .profile-pic {
+                width: 70px;
+                height: 70px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="profile-container">
         <div class="profile-header">
-            https://randomuser.me/api/portraits/lego/1.jpg
-            <h2>Lana K. <span class="user-type">Student</span></h2>
+            <img src="https://randomuser.me/api/portraits/lego/1.jpg" alt="Profile Picture" classser-type">Student</span></h2>
             <button class="edit-btn">Edit</button>
             <div>@lanazest | Zagreb, Croatia | Age: 17</div>
         </div>
+
         <div class="section">
             <div class="section-title">Bio</div>
             <div class="bio">Aspiring designer, music lover, and eco-activist. Here to make a difference!</div>
         </div>
+
         <div class="section">
             <div class="section-title">Interests</div>
             <div class="tags">
@@ -43,6 +105,7 @@
                 <span class="tag">#sustainability</span>
             </div>
         </div>
+
         <div class="section">
             <div class="section-title">ZestMe Highlights</div>
             <div class="profile-links">
@@ -50,6 +113,7 @@
                 #Add Story</a>
             </div>
         </div>
+
         <div class="section">
             <div class="section-title">Projects</div>
             <div class="profile-links">
@@ -57,6 +121,7 @@
                 #Start New Project</a>
             </div>
         </div>
+
         <div class="section">
             <div class="section-title">Career Discovery</div>
             <div class="profile-links">
@@ -64,6 +129,7 @@
                 #See Suggestions</a>
             </div>
         </div>
+
         <div class="section">
             <div class="section-title">Education</div>
             <div class="profile-links">
@@ -74,3 +140,4 @@
     </div>
 </body>
 </html>
+
