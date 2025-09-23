@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 import ZestProfile from './components/ZestProfile/ZestProfile';
 import CreateProfile from './components/ZestProfile/CreateProfile';
 
@@ -14,7 +14,7 @@ function Home() {
 
 function App() {
   return (
-    <Router>
+    <>
       <nav style={{
         display: 'flex', gap: 24, padding: 18, background: '#7fd7c4', justifyContent: 'center'
       }}>
@@ -27,9 +27,8 @@ function App() {
         <Route path="/profile" element={<ZestProfile />} />
         <Route path="/create-profile" element={<CreateProfile />} />
       </Routes>
-    </Router>
+    </>
   );
 }
 
 export default App;
-
