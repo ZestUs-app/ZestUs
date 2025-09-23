@@ -28,7 +28,8 @@ function ZestProfile() {
           <h2>
             {profile.name} <span className="user-type">{profile.userType}</span>
           </h2>
-          <a href="/ZestUs/create-profile" className="editassName="profile-meta">
+          <a href="/ZestUs/#/createdit</a>
+          <div className="profile-meta">
             {profile.username} | {profile.location} | Age: {profile.age}
           </div>
         </div>
