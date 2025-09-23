@@ -21,7 +21,6 @@ function CreateProfile() {
   const handleSubmit = e => {
     e.preventDefault();
     localStorage.setItem('zestus_profile', JSON.stringify(form));
-    // ✅ FIXED: Use HashRouter-compatible redirect
     window.location.href = '/ZestUs/#/profile';
   };
 
