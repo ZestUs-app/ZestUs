@@ -1,18 +1,23 @@
-import React from 'react';
-import Contact from './components/Contact/Contact';
-import VisitorCounter from './components/VisitorCounter/VisitorCounter';
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import HomeFeed from './components/HomeFeed';
+import ZestProfile from './components/ZestProfile/ZestProfile';
+// Import other components as needed
 
-export default function App() {
+function App() {
   return (
-    <div style={{ textAlign: 'center', padding: '2rem' }}>
-      <h1>Welcome to ZestUs</h1>
-      <p>This is a working React + Vite app deployed via GitHub Pages.</p>
-
-      {/* Visitor Counter */}
-      <VisitorCounter />
-
-      {/* Contact Form */}
-      <Contact />
-    </div>
+    <Router>
+      <nav>
+        <Link to="/">Home</Link>
+        <Link to="/zestprofile">ZestProfile</Link>
+        {/* Add more links as needed */}
+      </nav>
+      <Routes>
+        <Route path="/" element={<HomeFeed />} />
+        <Route path="/zestprofile" element={<ZestProfile />} />
+        {/* Add more routes as needed */}
+      </Routes>
+    </Router>
   );
 }
+
+export default App;
