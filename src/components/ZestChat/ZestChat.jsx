@@ -1,49 +1,61 @@
 import React, { useState } from 'react';
-import './ZestChat.css'; // Optional: for styling
+import './ZestChat.css';
 
-export default function ZestChat() {
-  const [chatLog, setChatLog] = useState([]);
-  const [balloons] = useState(['Alice', 'Bob', 'Charlie', 'Diana']);
+const users = [
+  { id: 1, name: 'Luka', language: 'en' },
+  { id: 2, name: 'Mia', language: 'es' },
+  { id: 3, name: 'Noa', language: 'fr' },
+  { id: 4, name: 'Ivan', language: 'de' }
+];
 
-  const handleCrash = (user1, user2) => {
-    const message = `${user1} and ${user2} crashed! 🎉 AI translation enabled.`;
-    const emojis = ['😊', '🔥', '🎈', '💬', '❤️'];
-    const miniGame = ['Trivia', 'Emoji Match', 'Quick Draw'][Math.floor(Math.random() * 3)];
+const emojis = ['😊', '🔥', '🎉', '💬', '❤️'];
+const miniGames = ['Trivia', 'Emoji Match', 'Quick Draw'];
 
-    setChatLog([
-      ...chatLog,
-      {
-        message,
-        emojis: emojis.sort(() => 0.5 - Math.random()).slice(0, 3),
-        miniGame,
-      },
-    ]);
+const ZestChat = () => {
+  const [chatMessage, setChatMessage] = useState('');
+  const [selectedUsers, setSelectedUsers] = useState([]);
+  const [crashResult, setCrashResult] = useState(null);
+
+  const handleBalloonClick = (user) => {
+    if (selectedUsers.length === 1) {
+      const user1 = selectedUsers[0];
+      const user2 = user;
+      const message = `${user1.name} and ${user2.name} connected! AI translation enabled.`;
+      const game = miniGames[Math.floor(Math.random() * miniGames.length)];
+      const emojiSet = emojis.sort(() => 0.5 - Math.random()).slice(0, 3);
+
+      setCrashResult({ message, game, emojiSet });
+      setSelectedUsers([]);
+    } else {
+      setSelectedUsers([user]);
+      setCrashResult(null);
+    }
   };
 
   return (
-    <section className="zest-chat">
-      <h2>🎈 ZestChat Balloons</h2>
-      <div className="balloon-container">
-        {balloons.map((user, index) => (
+    <div className="zest-chat-container">
+      <h2>ZestChat Balloons</h2>
+      <div className="balloon-area">
+        {users.map((user) => (
           <div
-            key={index}
-            className="balloon"
-            onClick={() => handleCrash(user, balloons[(index + 1) % balloons.length])}
+            key={user.id}
+            className="chat-balloon"
+            onClick={() => handleBalloonClick(user)}
           >
-            {user}
+            {user.name}
           </div>
         ))}
       </div>
 
-      <div className="chat-log">
-        {chatLog.map((entry, i) => (
-          <div key={i} className="chat-entry">
-            <p>{entry.message}</p>
-            <p>Mini-game: <strong>{entry.miniGame}</strong></p>
-            <p>Emojis: {entry.emojis.join(' ')}</p>
-          </div>
-        ))}
-      </div>
-    </section>
+      {crashResult && (
+        <div className="chat-box">
+          <h3>{crashResult.message}</h3>
+          <p>Mini-game: <strong>{crashResult.game}</strong></p>
+          <p>Emojis: {crashResult.emojiSet.join(' ')}</p>
+        </div>
+      )}
+    </div>
   );
-}
+};
+
+export default ZestChat;
