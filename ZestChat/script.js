@@ -1,4 +1,3 @@
-
 const container = document.getElementById('balloon-container');
 const emojis = ['😊', '🎉', '💬', '🌍', '🚀', '❤️', '😎', '🤗', '✨', '🎈'];
 const names = ['Alex', 'Bella', 'Chris', 'Dana', 'Eli', 'Fay', 'Gabe', 'Hana', 'Ivan', 'Jade'];
