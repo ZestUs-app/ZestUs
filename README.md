@@ -1,4 +1,5 @@
 <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/78e8cdc5-1cf6-466d-993d-43037320f6ed" />
+
 # 🌟 ZestUs — The Social Collaboration Platform for the Next Generation
 
 ZestUs is not just another social app. It’s a movement.  
