@@ -75,18 +75,23 @@
         The Social Collaboration Platform for the Next Generation
     </header>
 
-    <div id="google_translate_element" style="margin: 10px;"></div>
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-        }
-    </script>
-    //translate.google.com/translate_a/element.js?cb=googleTranslateElementInit</script>
-
     <div class="visitor-counter">
         <strong>Visitor Counter:</strong><br>
-        🌍 Countries: [Placeholder] | 🎂 Age Groups: [Placeholder]
+        🌍 Countries: <span id="country-count">0</span> |
+        🎂 Age Groups: <span id="age-group-count">0</span>
     </div>
+
+    <script>
+        // Simulated visitor data
+        const countries = ['USA', 'Canada', 'UK', 'Germany', 'India', 'Brazil'];
+        const ageGroups = ['13-17', '18-24', '25-30'];
+        const countryCount = Math.floor(Math.random() * countries.length) + 1;
+        const ageGroupCount = Math.floor(Math.random() * ageGroups.length) + 1;
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("country-count").textContent = countryCount;
+            document.getElementById("age-group-count").textContent = ageGroupCount;
+        });
+    </script>
 
     <div class="container">
         <div class="card">ZestMe/index.html⭐ Zest Me</a><p>Stories with filters, music, and challenges.</p></div>
