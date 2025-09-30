@@ -1,4 +1,5 @@
 # 🌟 ZestUs — The Social Collaboration Platform for the Next Generation
+<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/78e8cdc5-1cf6-466d-993d-43037320f6ed" />
 
 ZestUs is not just another social app. It’s a movement.  
 A vibrant, youth-powered platform where fun meets purpose — and where creativity, connection, and opportunity collide.
