@@ -2,12 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ZestChat Balloons</title>
+    <title>ZestChat Real-Time</title>
     style.css
+    <!-- Firebase SDK -->
+    https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js</script>
+    https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js
 </head>
 <body>
-    <h1>🎈 Welcome to ZestChat 🎈</h1>
+    <h1>🎈 Welcome to ZestChat Real-Time 🎈</h1>
     <div id="balloon-container"></div>
+    <div id="chat-window" class="hidden">
+        <div id="chat-messages"></div>
+        <input type="text" id="chat-input" placeholder="Type a message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
     script.js</script>
 </body>
 </html>
