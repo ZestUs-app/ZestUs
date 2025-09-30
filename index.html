@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>ZestUs Homepage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    styles.css
-    script.js</script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
     <style>
         body {
             font-family: 'Segoe UI', sans-serif;
@@ -22,11 +22,14 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
             display: flex;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: center;
+            position: relative;
         }
         .logo {
+            position: absolute;
+            left: 20px;
+            top: 20px;
             height: 50px;
-            margin-right: 20px;
         }
         .visitor-counter {
             background-color: #fff;
@@ -76,7 +79,7 @@
 </head>
 <body>
     <header>
-        logo.png
+        <img src="logo.png" alt="ZestUs Logo" class="logo">
         <div>
             🌟 Welcome to ZestUs 🌟<br>
             The Social Collaboration Platform for the Next Generation
@@ -94,13 +97,13 @@
     </div>
 
     <div class="container">
-        <div class="card">ZestMe/index.html⭐ Zest Me</a><p>Stories with filters, music, and challenges.</p></div>
-        <div class="card">ZestChat/index.html⭐ Zest Chat</a><p>Interactive chat balloons and global connections.</p></div>
-        <div class="card">ZestProjects/index.html⭐ Zest Projects</a><p>Real-world projects with rewards and mentorship.</p></div>
-        <div class="card">ZestCare/index.html⭐ Zest Care</a><p>Mental health check-ins and ZestPal AI friend.</p></div>
-        <div class="card">ZestYouCanBe/index.html⭐ Zest You Can Be</a><p>Career discovery quiz and inspiration.</p></div>
-        <div class="card">ZestMySchool/index.html⭐ Zest My School</a><p>School directory and engagement tools.</p></div>
-        <div class="card">ZestLearn/index.html⭐ Zest Learn</a><p>AI tutors for school subjects and life skills.</p></div>
+        <div class="card"><a href="ZestMe/index.html">⭐ Zest Me</a><p>Stories with filters, music, and challenges.</p></div>
+        <div class="card"><a href="ZestChat/index.html">⭐ Zest Chat</a><p>Interactive chat balloons and global connections.</p></div>
+        <div class="card"><a href="ZestProjects/index.html">⭐ Zest Projects</a><p>Real-world projects with rewards and mentorship.</p></div>
+        <div class="card"><a href="ZestCare/index.html">⭐ Zest Care</a><p>Mental health check-ins and ZestPal AI friend.</p></div>
+        <div class="card"><a href="ZestYouCanBe/index.html">⭐ Zest You Can Be</a><p>Career discovery quiz and inspiration.</p></div>
+        <div class="card"><a href="ZestMySchool/index.html">⭐ Zest My School</a><p>School directory and engagement tools.</p></div>
+        <div class="card"><a href="ZestLearn/index.html">⭐ Zest Learn</a><p>AI tutors for school subjects and life skills.</p></div>
     </div>
 
     <footer>
