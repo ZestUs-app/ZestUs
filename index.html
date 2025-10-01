@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ZestUs Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="ZestUs Logo" class="logo">
+        <div class="welcome">
+            🌟 Welcome to ZestUs 🌟<br>
+            The Social Collaboration Platform for the Next Generation
+        </div>
+    </header>
+
+    <div class="visitor-counter">
+        <strong>Visitor Counter:</strong><br>
+        🌍 Countries: <span id="country-count">0</span> |
+        🎂 Age Groups: <span id="age-group-count">0</span><br><br>
+        <label for="age">Enter your age (optional):</label>
+        <input type="number" id="age" name="age" min="0" max="120">
+        <button onclick="registerVisitor()">Register Visit</button>
+        <div id="visitor-stats"></div>
+    </div>
+
+    <div class="container">
+        <div class="card"><a href="ZestMe/index.html">⭐ Zest Me</a><p>Stories with filters, music, and challenges.</p></div>
+        <div class="card"><a href="ZestChat/index.html">⭐ Zest Chat</a><p>Interactive chat balloons and global connections.</p></div>
+        <div class="card"><a href="ZestProjects/index.html">⭐ Zest Projects</a><p>Real-world projects with rewards and mentorship.</p></div>
+        <div class="card"><a href="ZestCare/index.html">⭐ Zest Care</a><p>Mental health check-ins and ZestPal AI friend.</p></div>
+        <div class="card"><a href="ZestYouCanBe/index.html">⭐ Zest You Can Be</a><p>Career discovery quiz and inspiration.</p></div>
+        <div class="card"><a href="ZestMySchool/index.html">⭐ Zest My School</a><p>School directory and engagement tools.</p></div>
+        <div class="card"><a href="ZestLearn/index.html">⭐ Zest Learn</a><p>AI tutors for school subjects and life skills.</p></div>
+    </div>
+
+    <footer>
+        &copy; 2024 ZestUs | Empowering Youth Through Fun and Purpose
+    </footer>
+</body>
+</html>
