@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ZestUs</title>
+<title>ZestUs Platform</title>
 <style>
     body {
         margin: 0;
@@ -12,28 +12,41 @@
         overflow-x: hidden;
     }
     header {
-        text-align: center;
-        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
         background: #007BFF;
         color: white;
-        font-size: 24px;
+    }
+    header img {
+        height: 40px;
+    }
+    nav a {
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
         font-weight: bold;
+    }
+    nav a:hover {
+        text-decoration: underline;
     }
     .balloon {
         position: absolute;
         width: 100px;
         height: 130px;
-        background: url('https://i.imgur.com/8QfQZ0T.png') no-repeat center/contain;
+        background: url('https://i.imgur.com/4YQFJ6p.png') no-repeat center/contain;
         animation: float 12s linear infinite;
     }
     .avatar {
         position: absolute;
-        top: 30px;
+        top: 35px;
         left: 25px;
         width: 50px;
         height: 50px;
         border-radius: 50%;
         background-size: cover;
+        border: 2px solid white;
     }
     @keyframes float {
         0% { top: 100vh; left: 10vw; }
@@ -116,7 +129,15 @@
 </style>
 </head>
 <body>
-<header>ZestUs Platform</header>
+<header>
+    logo.png
+    <nav>
+        #Home</a>
+        ZestChat/index.htmlZestChat</a>
+        ZestCase/index.htmlZestCase</a>
+        ZestProjects/index.htmlZestProjects</a>
+    </nav>
+</header>
 
 <!-- Flying Balloons -->
 <div class="balloon" id="balloon1">
@@ -135,8 +156,7 @@
     <div id="zestme">
         <h2>ZestMe - Show Your Talent</h2>
         <p>Watch this inspiring story:</p>
-        <iframe src="https://www.youtube.com/embed/dQw4me>
-    </div>
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgX   </div>
 </div>
 
 <!-- Profile Modal -->
@@ -168,7 +188,7 @@
     </div>
 </div>
 
-<audio id="crash-soundom/button/sounds/button-16.mp3</audio>
+https://www.soundjay.com/button/sounds/button-16.mp3</audio>
 
 <script>
     // Visitor Counter
