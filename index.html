@@ -1,1 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZestUs</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to top, #a0e9ff, #ffffff);
+        overflow-x: hidden;
+    }
+    header {
+        text-align: center;
+        padding: 20px;
+        background: #007BFF;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .balloon {
+        position: absolute;
+        width: 100px;
+        height: 130px;
+        background: url('https://i.imgur.com/8QfQZ0T.png') no-repeat center/contain;
+        animation: float 12s linear infinite;
+    }
+    .avatar {
+        position: absolute;
+        top: 30px;
+        left: 25px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-size: cover;
+    }
+    @keyframes float {
+        0% { top: 100vh; left: 10vw; }
+        50% { top: 30vh; left: 50vw; }
+        100% { top: 0vh; left: 90vw; }
+    }
+    #visitor-counter {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        background: #fff;
+        padding: 8px 12px;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.3);
+        font-size: 14px;
+    }
+    .main-content {
+        text-align: center;
+        padding: 40px 20px;
+    }
+    .btn {
+        background: #007BFF;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 6px;
+        font-size: 18px;
+        cursor: pointer;
+        margin: 10px;
+    }
+    /* Modal */
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(0,0,0,0.6);
+        justify-content: center;
+        align-items: center;
+    }
+    .modal-content {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        width: 90%;
+        max-width: 600px;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+    .avatar-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .avatar-grid div {
+        width: 80px;
+        height: 80px;
+        background-color: #ddd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 50%;
+        font-size: 12px;
+        text-align: center;
+        padding: 5px;
+    }
+    .avatar-grid div.selected {
+        border: 3px solid #007BFF;
+    }
+    #zestme {
+        margin-top: 40px;
+    }
+    iframe {
+        width: 100%;
+        height: 315px;
+        border-radius: 10px;
+    }
+</style>
+</head>
+<body>
+<header>ZestUs Platform</header>
 
+<!-- Flying Balloons -->
+<div class="balloon" id="balloon1">
+    <div class="avatar" style="background-image: url('https://i.imgur.com/1X4Z1ZQ.png');"></div>
+</div>
+<div class="balloon" id="balloon2" style="animation-delay: 3s;">
+    <div class="avatar" style="background-image: url('https://i.imgur.com/2X4Z1ZQ.png');"></div>
+</div>
+
+<!-- Visitor Counter -->
+<div id="visitor-counter">Visitors: <span id="count">0</span></div>
+
+<!-- Main Content -->
+<div class="main-content">
+    <button class="btn" onclick="openModal()">Zest Profile</button>
+    <div id="zestme">
+        <h2>ZestMe - Show Your Talent</h2>
+        <p>Watch this inspiring story:</p>
+        <iframe src="https://www.youtube.com/embed/dQw4me>
+    </div>
+</div>
+
+<!-- Profile Modal -->
+<div class="modal" id="profileModal">
+    <div class="modal-content">
+        <h2>Create Your Profile</h2>
+        <label>Select your category:</label>
+        <select id="category">
+            <option>Teen</option><option>Student</option><option>Teacher</option>
+            <option>Company</option><option>School</option><option>University</option>
+            <option>Institution</option><option>Expert in Field</option><option>Scientist</option>
+            <option>Artist</option><option>Change Maker</option><option>Parent</option><option>Other</option>
+        </select>
+        <label>Choose an avatar:</label>
+        <div class="avatar-grid" id="avatarGrid">
+            <div onclick="selectAvatar(this)">Tesla</div>
+            <div onclick="selectAvatar(this)">Einstein</div>
+            <div onclick="selectAvatar(this)">Marie Curie</div>
+            <div onclick="selectAvatar(this)">Oprah</div>
+            <div onclick="selectAvatar(this)">Luka Modrić</div>
+            <div onclick="selectAvatar(this)">Van Gogh</div>
+            <div onclick="selectAvatar(this)">Newton</div>
+            <div onclick="selectAvatar(this)">Audrey Hepburn</div>
+        </div>
+        <label>Tell us about yourself (optional):</label>
+        <textarea id="description" rows="3"></textarea>
+        <button class="btn" onclick="submitProfile()">Submit Profile</button>
+        <button class="btn" style="background:#ccc;color:#000;" onclick="closeModal()">Close</button>
+    </div>
+</div>
+
+<audio id="crash-soundom/button/sounds/button-16.mp3</audio>
+
+<script>
+    // Visitor Counter
+    let count = localStorage.getItem('visitorCount') || 0;
+    count++;
+    localStorage.setItem('visitorCount', count);
+    document.getElementById('count').textContent = count;
+
+    // Balloons Collision
+    function detectCollision() {
+        const b1 = document.getElementById('balloon1').getBoundingClientRect();
+        const b2 = document.getElementById('balloon2').getBoundingClientRect();
+        if (!(b1.right < b2.left || b1.left > b2.right || b1.bottom < b2.top || b1.top > b2.bottom)) {
+            document.getElementById('crash-sound').play();
+            document.getElementById('balloon1').style.backgroundImage = "url('https://i.imgur.com/SmilingBalloon.png')";
+            document.getElementById('balloon2').style.display = "none";
+        }
+    }
+    setInterval(detectCollision, 100);
+
+    // Modal Logic
+    function openModal() { document.getElementById('profileModal').style.display = 'flex'; }
+    function closeModal() { document.getElementById('profileModal').style.display = 'none'; }
+
+    let selectedAvatar = "";
+    function selectAvatar(el) {
+        document.querySelectorAll('.avatar-grid div').forEach(div => div.classList.remove('selected'));
+        el.classList.add('selected');
+        selectedAvatar = el.textContent;
+    }
+
+    function submitProfile() {
+        const category = document.getElementById('category').value;
+        const description = document.getElementById('description').value;
+        localStorage.setItem('zestCategory', category);
+        localStorage.setItem('zestAvatar', selectedAvatar);
+        localStorage.setItem('zestDescription', description);
+        alert('Profile saved! You can now participate.');
+        closeModal();
+    }
+</script>
+</body>
+</html>
