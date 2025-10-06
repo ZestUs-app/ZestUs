@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ZestUs Upgrade 3.9</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="assets/images/zestus_logo.jpg" alt="ZestUs Logo" style="height:60px;">
+        <div id="visitor-counter">Visitors: 123 | Location: Guest | Age Group: Guest</div>
+        <button id="dark-mode-toggle">Toggle Dark Mode</button>
+    </header>
+
+    <section id="hero">
+        <h1>Your Space to Create, Connect, and Change the Future</h1>
+        <div class="balloons">
+            <button onclick="openChatModal()">🎈 Chat</button>
+        </div>
+    </section>
+
+    <section id="video-gallery">
+        <h2>Inspiring Videos</h2>
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+    </section>
+
+    <section id="features">
+        <h2>Core Features</h2>
+        <div class="feature-card" style="background:linear-gradient(to right, pink, yellow);">ZestChat</div>
+        <div class="feature-card" style="background:orange;">ZestMe</div>
+        <div class="feature-card" style="background:linear-gradient(to right, white, yellow);">ZestCare</div>
+        <div class="feature-card" style="background:blue;">ZestYouCanBe</div>
+        <div class="feature-card" style="background:green;">ZestImpact</div>
+        <div class="feature-card" style="background:black; color:white;">ZestDesign</div>
+        <div class="feature-card" style="background:linear-gradient(to right, purple, orange);">ZestArt</div>
+        <div class="feature-card" style="background:lightblue;">ZestLearn</div>
+        <div class="feature-card" style="background:lightgreen;">ZestProjects</div>
+        <div class="feature-card" style="background:lightgray;">ZestProfile</div>
+        <div class="feature-card" style="background:lightcoral;">ZestMySchool</div>
+        <div class="feature-card" style="background:lightgoldenrodyellow;">ZestNews</div>
+    </section>
+
+    <section id="zeeeest-fuunnn">
+        <h2>Zeeeest Fuunnn</h2>
+        <p>Fun challenges coming soon!</p>
+    </section>
+
+    <section id="explore-more">
+        <h2>Explore More</h2>
+        <p>📚 100 Best Books & Movies – Coming Soon</p>
+        <p>💼 100 Careers + Top 10 Future Jobs – Coming Soon</p>
+        <p>🎮 Fun Challenges Gallery – Coming Soon</p>
+    </section>
+
+    <section id="about-zest">
+        <h2>About ZestUs</h2>
+        <p>ZestUs is not just another social app. It’s a movement...</p>
+    </section>
+
+    <div id="chat-modal" style="display:none;">
+        <p>Welcome to ZestChat! 🚀</p>
+        <button onclick="closeChatModal()">Close</button>
+    </div>
+
+    <script>
+        function openChatModal() {
+            document.getElementById('chat-modal').style.display = 'block';
+        }
+        function closeChatModal() {
+            document.getElementById('chat-modal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
