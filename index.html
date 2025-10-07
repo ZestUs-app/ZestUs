@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ZestUs 4.0</title>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+  <header>
+    <img src="assets/images/zestus_logo.png" alt="ZestUs Logo" class="logo"/>
+    <h1>Welcome to ZestUs</h1>
+  </header>
+
+  <section id="visitor-counter">
+    <h2>Visitor Counter</h2>
+    <p id="visitor-info">Loading visitor info...</p>
+  </section>
+
+  <section id="zest-profile">
+    <button onclick="document.getElementById('profile-form').style.display='block'"><strong>Zest Profile</strong></button>
+    <div id="profile-form" style="display:none;">
+      <h3>Create Your Profile</h3>
+      <label>Category:
+        <select id="category">
+          <option>Teen</option><option>Student</option><option>Teacher</option>
+          <option>Company</option><option>School</option><option>University</option>
+          <option>Institution</option><option>Expert in Field</option><option>Scientist</option>
+          <option>Artist</option><option>Change Maker</option><option>Parent</option><option>Other</option>
+        </select>
+      </label><br/>
+      <label>Choose Avatar:
+        <select id="avatar">
+          <option>teen.png</option><option>student.png</option><option>teacher.png</option>
+          <option>company.png</option><option>school.png</option><option>university.png</option>
+          <option>scientist.png</option><option>artist.png</option><option>changemaker.png</option>
+        </select>
+      </label><br/>
+      <label>Tell us about yourself (optional):<br/>
+        <textarea id="about" rows="4" cols="50"></textarea>
+      </label><br/>
+      <button onclick="submitProfile()">Submit Profile</button>
+    </div>
+  </section>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
