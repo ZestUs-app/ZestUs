@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ZestUs 4.0</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <img src="assets/images/zestus_logo.png" class="logo" alt="ZestUs Logo">
+        <button id="zestProfileBtn">Zest Profile</button>
+        <button id="aboutZestBtn">About Zest</button>
+        <div id="visitor-info">Loading visitor info...</div>
+    </header>
+
+    <h1>Your Space to Create, Connect, and Change the Future</h1>
+
+    <section class="features">
+        <div class="card fun">Zeeeest Fuuunnn</div>
+        <div class="card chat">ZestChat</div>
+        <div class="card me">ZestMe</div>
+        <div class="card care">ZestCare</div>
+        <div class="card projects">ZestProjects</div>
+        <div class="card youcanbe">ZestYouCanBe</div>
+        <div class="card myschool">ZestMySchool</div>
+    </section>
+
+    <h2>Future Features</h2>
+    <section class="features">
+        <div class="card future">ZestArt & Design</div>
+        <div class="card future">ZestBooks & Movies</div>
+        <div class="card future">ZestLearn</div>
+        <div class="card future">ZestImpact</div>
+    </section>
+
+    <section class="videos">
+        <h2>Inspiring Videos</h2>
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/2Lz0VOltZKA" frameborder="0" allowfullscreen></iframe>
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/3xGZ2zGmJ5Q" frameborder="0" allowfullscreen></iframe>
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/1ZJ2kJd7sWc" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <div id="profileModal" class="modal" style="display:none;">
+        <h2>Create Your Profile</h2>
+        <label>Category:</label>
+        <select id="category">
+            <option>Teen</option><option>Student</option><option>Teacher</option><option>Company</option>
+            <option>School</option><option>University</option><option>Institution</option><option>Expert in Field</option>
+            <option>Scientist</option><option>Artist</option><option>Change Maker</option><option>Parent</option><option>Other</option>
+        </select>
+        <label>Choose Avatar:</label>
+        <div id="avatars"></div>
+        <label>Tell us about yourself (optional):</label>
+        <textarea id="about"></textarea>
+        <button onclick="submitProfile()">Submit</button>
+    </div>
+
+    <div id="aboutModal" class="modal" style="display:none;">
+        <h2>About ZestUs</h2>
+        <p>ZestUs 4.0 upgrade with logo, visitor counter, and Zest Profile system. Users can select a category, choose an avatar, add optional info, and store profile locally. Future features include ZestChat, ZestMe, ZestCare, ZestProjects, Zeeeest Fuuunnn, ZestYouCanBe, ZestMySchool, ZestArt & Design, ZestBooks & Movies, ZestLearn, ZestImpact.</p>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
