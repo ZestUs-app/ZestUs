@@ -1,0 +1,75 @@
+
+body {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.logo {
+    height: 60px;
+    margin: 10px;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+.card {
+    width: 180px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulse 3s infinite;
+}
+.card.fun {
+    background: linear-gradient(45deg, #ff00cc, #3333ff);
+}
+.card.chat {
+    background: linear-gradient(45deg, #00ffff, #00ff00);
+}
+.card.me {
+    background: linear-gradient(45deg, #ff9966, #ff5e62);
+}
+.card.care {
+    background: linear-gradient(45deg, #ffb6c1, #dda0dd);
+}
+.card.projects {
+    background: linear-gradient(45deg, #1e90ff, #20b2aa);
+}
+.card.youcanbe {
+    background: linear-gradient(45deg, #ffcc00, #ff6600);
+}
+.card.myschool {
+    background: linear-gradient(45deg, #66ffcc, #3399ff);
+}
+.card.future {
+    background: linear-gradient(45deg, #8a2be2, #ff1493);
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+.modal {
+    background: #222;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: fixed;
+    top: 10%;
+    left: 20%;
+    width: 60%;
+    z-index: 1000;
+}
